@@ -1,27 +1,17 @@
 package com.ivoronline.relationships_onetoone.entities;
 
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.OneToOne;
-import javax.persistence.CascadeType;
+import javax.persistence.Id;
 
 @Entity
-public class AuthorEntity {
+public class Address {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   public Integer id;
-  public String  name;
-  public Integer age;
-
-  @OneToOne(cascade = CascadeType.ALL)
-  public AddressEntity address;
+  public String  city;
+  public String  street;
 
 }
-
-
-
-
-
