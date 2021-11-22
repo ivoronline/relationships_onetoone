@@ -15,8 +15,8 @@ public class MyController {
   //===========================================================================
   // ADD AUTHOR ADDRESS
   //===========================================================================
-  @RequestMapping("/AddAuthorAddress")
-  public String addAuthorAddress() {
+  @RequestMapping("AddAuthorAddress")
+  String addAuthorAddress() {
 
     //CREATE ADDRESS ENTITY
     Address address        = new Address();
@@ -40,8 +40,8 @@ public class MyController {
   //===========================================================================
   // GET AUTHOR ADDRESS
   //===========================================================================
-  @RequestMapping("/GetAuthorAddress")
-  public String GetAuthorAddress() {
+  @RequestMapping("GetAuthorAddress")
+  String GetAuthorAddress() {
 
     //GET AUTHOR
     Author author = authorRepository.findById(1).get();
