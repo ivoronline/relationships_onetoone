@@ -32,7 +32,7 @@ public class MyController {
     //STORE AUTHOR/ADDRESS ENTITY INTO DB
     authorRepository.save(author);
 
-    //RETURN SOMETHING
+    //RETURN MESSAGE
     return "Author/Address was stored into DB";
 
   }
@@ -49,7 +49,7 @@ public class MyController {
     //GET ADDRESS
     Address address = author.address;
 
-    //RETURN SOMETHING
+    //RETURN MESSAGE
     return author.name + " lives in " + address.city;
     
   }
