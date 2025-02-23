@@ -1,10 +1,10 @@
-package com.ivoronline.relationships_onetoone;
+package com.ivoronline;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RelationshipsOnetooneApplicationTests {
+class SpringbootApplicationTests {
 
   @Test
   void contextLoads() {

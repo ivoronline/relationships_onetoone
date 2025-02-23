@@ -1,13 +1,13 @@
-package com.ivoronline.relationships_onetoone;
+package com.ivoronline;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RelationshipsOnetooneApplication {
+public class SpringbootApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(RelationshipsOnetooneApplication.class, args);
+    SpringApplication.run(SpringbootApplication.class, args);
   }
 
 }

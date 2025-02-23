@@ -1,17 +1,16 @@
-package com.ivoronline.relationships_onetoone.controllers;
+package com.ivoronline.controller;
 
-import com.ivoronline.relationships_onetoone.entities.Author;
-import com.ivoronline.relationships_onetoone.entities.Address;
-import com.ivoronline.relationships_onetoone.repositories.AuthorRepository;
+import com.ivoronline.entity.Address;
+import com.ivoronline.entity.Author;
+import com.ivoronline.repository.AuthorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class MyController {
 
   //PROPERTIES
-  @Autowired AuthorRepository  authorRepository;
+  @Autowired AuthorRepository authorRepository;
 
   //===========================================================================
   // ADD AUTHOR ADDRESS
@@ -25,7 +24,7 @@ public class MyController {
             address.street = "Piccadilly";
 
     //CREATE AUTHOR ENTITY
-    Author  author         = new Author();
+    Author author         = new Author();
             author.name    = "John";
             author.age     = 20;
             author.address = address;
@@ -42,7 +41,7 @@ public class MyController {
   // GET AUTHOR ADDRESS
   //===========================================================================
   @RequestMapping("GetAuthorAddress")
-  String GetAuthorAddress() {
+  String getAuthorAddress() {
 
     //GET AUTHOR
     Author author = authorRepository.findById(1).get();
@@ -52,6 +51,7 @@ public class MyController {
 
     //RETURN SOMETHING
     return author.name + " lives in " + address.city;
+    
   }
-
+  
 }

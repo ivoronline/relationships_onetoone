@@ -1,6 +1,6 @@
-package com.ivoronline.relationships_onetoone.repositories;
+package com.ivoronline.repository;
 
-import com.ivoronline.relationships_onetoone.entities.Author;
+import com.ivoronline.entity.Author;
 import org.springframework.data.repository.CrudRepository;
 
 public interface AuthorRepository extends CrudRepository<Author, Integer> { }

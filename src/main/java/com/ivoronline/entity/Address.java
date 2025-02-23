@@ -1,4 +1,4 @@
-package com.ivoronline.relationships_onetoone.entities;
+package com.ivoronline.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
